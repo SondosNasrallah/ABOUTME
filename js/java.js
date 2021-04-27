@@ -1,7 +1,14 @@
+/* eslint-disable eol-last */
+/* eslint-disable no-undef */
+/* eslint-disable eqeqeq */
 /* eslint-disable no-unused-vars */
 
 
 'use strict';
+
+alert('Welcome to our humble page, where you can test your mind');
+let uName = prompt('Please Enter your name');
+alert('welcome to our page ' + uName + ' you can play the guessing game now')
 
 alert('My Name start with MAHM and ends with OUD');
 
@@ -75,4 +82,61 @@ case 'NO':
 case 'N':
   alert('I think I am going to eat you');
   break;
+}
+
+
+alert('Now game #2 \n I have a number and you need to guess it');
+
+
+let userInput = parseInt(prompt('My number is between 10 to 20 and it is a single number'));
+let score = 0;
+let count = 0;
+
+for (let i = 0; i < 4; i++) {
+  if (userInput > 17) {
+    alert('You Missed Bro, it is less than ' + userInput);
+    userInput = prompt('Guess again!');
+    count++;
+  } else if (userInput < 17) {
+    alert('You Missed Bro, it is Higher than ' + userInput);
+    userInput = prompt('Guess again!');
+    count++;
+  } else {
+    score++;
+    alert('Man, it seems you are living in my mind ' + 'Your score now is ' + score);
+    break;
+  }
+}
+if (count == 4) {
+  alert('The number is 17 Habibi');
+}
+console.log(score);
+
+let nFood = ['MUNSEF', 'BURGER', 'SHAWERMA', 'FRIES', 'FISH', 'MAQLOBEH'];
+let answer = prompt('what is my favorite food ?');
+answer = answer.toUpperCase();
+let counter = 0;
+for (let i = 0; i < 6; i++) {
+  if (answer === nFood[0] || answer === nFood[1]|| answer === nFood[2] || answer === nFood[3] || answer === nFood[4] || answer === nFood[5]) {
+    alert('Correct ' + answer + ' is one of the favorite food');
+    score++;
+    break;
+  } else {
+    alert('No Dude, ' + answer + ' is not my favorite food');
+    answer = prompt('Please, Guess again!');
+    counter++;
+  }
+}
+
+if (counter == 6) {
+  alert('you have consumed all your guesses and my favorite food are Munsef, Burger, Shawerma, Fries, Fish and Maqlobeh' );
+}
+
+console.log(score);
+alert( uName + ' Your score is ' + score)
+
+if(score == 2){
+  alert(uName + ' it seems that you are me');
+}else if(score < 2) {
+  alert(uName + ' , we msut to get to know each other more');
 }

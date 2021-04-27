@@ -63,6 +63,36 @@ body {
     background-color: #eeebdd;
 }
 
+.order {
+    text-align: center;
+    color: #ce1212;
+    font-family: cursive;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.order2 {
+    color: #ce1212;
+    font-family: cursive;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+}
+
+.para {
+    text-align: center;
+    color: #ce1212;
+    font-family: cursive;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.unorder {
+    color: #ce1212;
+    font-family: cursive;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 footer p {
     text-align: center;
     font-family: cursive;
