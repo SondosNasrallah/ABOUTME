@@ -8,6 +8,7 @@
 
 alert('Welcome to our humble page, where you can test your mind');
 let uName = prompt('Please Enter your name');
+console.log(uName);
 alert('welcome to our page ' + uName + ' you can play the guessing game now');
 
 alert('My Name start with MAHM and ends with OUD');
@@ -22,7 +23,7 @@ alert('You are GOD DAMN RIGHT');
 alert('Answer 5 Question to enter my HEART\n من الاخر بدي اقززك');
 
 let score = 0;
-let mGame = prompt('Am I a Gamer?');
+let mGame = prompt('Question Number 1 \nAm I a Gamer?');
 
 switch (mGame.toUpperCase()) {
 case 'YES':
@@ -36,8 +37,9 @@ case 'N':
   score--;
   break;
 }
+console.log(score);
 
-let mWeight = prompt('Am I fat?');
+let mWeight = prompt('Question Number 2 \nAm I fat?');
 
 switch (mWeight.toUpperCase()) {
 case 'YES':
@@ -51,8 +53,10 @@ case 'N':
   alert('Habibi, you are right?');
   break;
 }
+console.log(score);
 
-let mTv = prompt('Am I a Breaking Bad Fans ?');
+
+let mTv = prompt('Question Number 3 \nAm I a Breaking Bad Fans ?');
 switch (mTv.toUpperCase()) {
 case 'YES':
 case 'Y':
@@ -64,8 +68,10 @@ case 'N':
   alert('Go watch Cartoon Network');
   break;
 }
+console.log(score);
 
-let mSport = prompt('Am I a Basketball fan?');
+
+let mSport = prompt('Question Number 4 \nAm I a Basketball fan?');
 switch (mSport.toUpperCase()) {
 case 'YES':
 case 'Y':
@@ -77,8 +83,10 @@ case 'N':
   alert('Lazzzzzzyyy!');
   break;
 }
+console.log(score);
 
-let mFood = prompt('Am I a food fan?');
+
+let mFood = prompt('Question Number 5 \nAm I a food fan?');
 switch (mFood.toUpperCase()) {
 case 'YES':
 case 'Y':
@@ -90,7 +98,7 @@ case 'N':
   alert('I think I am going to eat you');
   break;
 }
-
+console.log(score);
 
 alert('Now game #2 \nI have a number and you need to guess it');
 
