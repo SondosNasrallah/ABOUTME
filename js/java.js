@@ -122,7 +122,7 @@ for (let i = 0; i < 4; i++) {
   }
 }
 if (count == 4) {
-  alert('The number is 17 Habibi');
+  alert('The number is 17 ');
 }
 console.log(score);
 
